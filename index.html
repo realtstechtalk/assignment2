@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Horizon Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <header>
+        <h1>New Horizon Freecode Survey Form</h1>
+        <p class="des">Thank you for taking the time to help us improve the platform.</p>
+    </header>
+    <form action="#" id="horizon">
+        <div class="grp-form">
+            <label for="name" class="frm-label">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" class="frm-in" required>
+        </div>
+        <div class="grp-form">
+            <label for="email" class="frm-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" class="frm-in" required>
+        </div>
+        <div class="grp-form">
+            <label for="age" class="frm-label">Age (optional)</label>
+            <input type="number" id="age" name="age" min="10" max="140" placeholder="Age" class="frm-in">
+        </div>
+        <div class="grp-form">
+            <p>Which option best describes your current role?</p>
+            <select name="role" id="role" class="frm-in" required>
+                <option value="" disabled selected>Select Current Role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="pnt">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="grp-form">
+            <p>Would you recommend New Horizon to a friend?</p>
+            <label><input type="radio" name="recommend" value="Definitely"> Definitely</label>
+            <label><input type="radio" name="recommend" value="Maybe"> Maybe</label>
+            <label><input type="radio" name="recommend" value="Not sure"> Not sure</label>
+        </div>
+        <div class="grp-form">
+            <p>What is your favorite feature of New Horizon?</p>
+            <select name="favorite" id="favorite" class="frm-in">
+                <option value="" disabled selected>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="source">Open Source</option>
+            </select>
+        </div>
+        <div class="grp-form">
+            <p>What would you like to see improved?<i> (Check all that apply)</i></p>
+            <label><input type="checkbox" name="improvements" value="frontend"> Front-End Projects</label>
+            <label><input type="checkbox" name="improvements" value="backend"> Back-End Projects</label>
+            <label><input type="checkbox" name="improvements" value="data"> Data Visualization</label>
+            <label><input type="checkbox" name="improvements" value="challenges"> Challenges</label>
+            <label><input type="checkbox" name="improvements" value="opensource"> Open Source Community</label>
+            <label><input type="checkbox" name="improvements" value="gitter"> Gitter help rooms</label>
+            <label><input type="checkbox" name="improvements" value="videos"> Videos</label>
+            <label><input type="checkbox" name="improvements" value="meetup"> City Meetups</label>
+            <label><input type="checkbox" name="improvements" value="wiki"> Wiki</label>
+            <label><input type="checkbox" name="improvements" value="forum"> Forum</label>
+            <label><input type="checkbox" name="improvements" value="course"> Additional Courses</label>
+        </div>
+        <div class="grp-form">
+            <p>Any comments or suggestions?</p>
+            <textarea name="comments" id="comments" class="comment" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div class="grp-form">
+            <button type="submit" class="sub-btn">Submit</button>
+        </div>
+    </form>
+</main>
+</body>
+</html>
